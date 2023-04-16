@@ -196,12 +196,13 @@ footer a {
   }
 
   .contain {
-    width: 80%;
+    width: 90%;
+    padding: 1rem;
   }
 
   .group {
     flex-direction: column-reverse;
-    padding: 1rem;
+    width: 100%;
   }
 }
 
