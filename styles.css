@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+header h1 {
+  margin-bottom: 3rem;
+}
+
+#root {
+  width: 60%;
+  border: 2px solid #ccc;
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-around;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  width: 300px;
+  height: auto;
+  background-color: #f2f2f2;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 1s;
+}
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 5px rgb(136, 117, 10);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.author {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: justify;
+}
+
+.cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ccc;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1rem;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  border: 0.05rem solid #aaa;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 1px rgb(88, 69, 19);
+}
+
+.links {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  border: 0.05rem solid #aaa;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.query {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  border-radius: 0.5rem;
+  padding: 2px;
+  width: 30%;
+  margin: auto;
+}
+
+#search {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 50%;
+  outline: none;
+  border: 1px solid #3c3c3c;
+}
+
+.last,
+.first,
+.addons,
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #3c3c3c;
+  color: aliceblue;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer .foot {
+  display: flex;
+  justify-content: around;
+  width: full;
+  margin-bottom: 2rem;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .first img {
+  width: 144px;
+  height: 144px;
+}
+
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.foot div {
+  flex: 1;
+}
+.foot .addons,
+.last {
+  gap: 1rem;
+}
+
+.foot .icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  #root {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .card {
+    margin: 2rem auto;
+    width: 90%;
+  }
+
+  footer .foot {
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 2rem;
+  }
+
+  footer small {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  #root {
+    width: 70%;
+  }
+  .card {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  #root {
+    width: 90%;
+  }
+  .card {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  .cover {
+    width: 80%;
+  }
+}
