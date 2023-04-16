@@ -368,6 +368,10 @@ function handlechange() {
     inputs.appendChild(item);
     item.classList.add("links");
     inputs.classList.add("query");
+    // item.addEventListener("click", function () {
+    //   const target = document.createElement("a");
+    //   a.href = `./templates/${book.book_id}.html`;
+    // });
   });
 }
 
