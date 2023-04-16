@@ -37,7 +37,7 @@ header h1 {
   flex-direction: column;
   border: 1px solid #ccc;
   padding: 1rem;
-  margin: 1rem 2rem;
+  margin: 1rem auto;
   width: 300px;
   height: auto;
   background-color: #f2f2f2;
