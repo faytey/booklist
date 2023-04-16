@@ -60,6 +60,7 @@ header h1 {
 .author {
   font-style: italic;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .description {
@@ -193,6 +194,15 @@ footer a {
   footer small {
     margin-top: 1rem;
   }
+
+  .contain {
+    width: 80%;
+  }
+
+  .group {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -202,6 +212,14 @@ footer a {
   .card {
     margin: 2rem auto;
     width: 90%;
+  }
+  .group {
+    flex-direction: column;
+  }
+
+  .covers {
+    width: 60%;
+    margin: auto;
   }
 }
 
@@ -216,4 +234,48 @@ footer a {
   .cover {
     width: 80%;
   }
+  .contain {
+    width: 90%;
+  }
+}
+
+.contents {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contain {
+  width: 60%;
+  margin: 3rem auto;
+  border: 2px solid #3c3c3c;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain > * {
+  margin: 1rem;
+}
+
+.covers {
+  height: 30rem;
+}
+
+.span {
+  font-size: 24px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group > * {
+  flex: 1;
+  padding: 1rem;
+  text-align: justify;
+  line-height: 2;
 }
